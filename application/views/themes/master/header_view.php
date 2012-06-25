@@ -9,3 +9,6 @@
 </head>
 <body id="container">
 <div id="body"  class="<?php echo $page; ?>">
+<div id="header">
+	<img src="/CTS/assets/images/logo.png" class="logo">
+</div>
