@@ -1,0 +1,212 @@
+html {
+	width: 80em;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+}
+
+body { margin: 0; }
+
+footer {
+	margin: 5em auto 0;
+	text-align: center;
+}
+input, textarea { 
+    border: none;
+    outline: none; 
+}
+
+a {
+	text-decoration: none;
+	color: #2B99E0;
+	font-weight: bold;
+}
+
+p {
+	
+}
+#container {
+	margin: 0em auto;
+	-webkit-box-shadow: 0px 0px 11px #000000;
+	-moz-box-shadow: 0px 0px 11px #000000;
+	box-shadow: 0px 0px 11px #000000;
+	width: 1100px;
+}
+/* Notification */
+.notify {
+	text-align: center;
+	font-size: 1.4em;
+}
+.info {
+	color: skyblue;
+}
+.success {
+	color: orange;
+}
+
+.error	{
+	color: red;
+}
+
+/* Misc */
+
+.aligncenter { 
+	text-align: center; 
+}
+
+/* Login form */
+
+.login_page {
+	margin-top: 7em;
+}
+
+#login_form {
+	border-radius: .5em;
+	width: 26em;
+	margin: 1em auto 1em;
+	padding: 2em;
+	border: .1em solid 	#CCC;
+	box-shadow: 0 0.4em .5em #EEE;
+	background: white;
+}
+
+#login_form h1 {
+	padding: 0 0 1em;
+	border-bottom: solid .1em #CCC;
+}
+
+#login_form input#username, #login_form input#password {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em;
+    
+}
+
+#login_form input#username, #login_form input#password {
+	border-bottom: .1em dashed #CCC !important;
+	width: 25em;
+}
+
+input#remember_me { 
+    margin: 0 .5em;
+}
+
+#login_form input#sign_in {
+	padding: 1em;
+	display: inline;
+	width: 10em;
+}
+
+ label#remember_label {
+ 	float: right;
+ }
+
+input#sign_in {
+    background: #2B99E0;
+    box-shadow: inset .1em .1em 0 #55AFE5;
+    border: #1B64CB .1em solid;
+    border-radius: .5em;
+    color: white;
+    font-weight: bold;
+}
+
+div#adduser label {
+	display: block;
+}
+div#adduser p {
+	display: block;
+	
+}
+
+/*------------------------------------------------*/
+/*---------------------[Header]-------------------*/
+/*------------------------------------------------*/
+
+#header {
+	background: url(../images/header-bg.jpg) repeat-x;
+	height: 80px;
+}
+
+.logo { margin: 10px; }
+
+/*------------------------------------------------*/
+/*------------------[Left-area]-------------------*/
+/*------------------------------------------------*/
+
+#left-area {
+	width: 206px;
+	height: 500px;
+	float: left;
+	background: #DDDFDC url(../images/left-bg.jpg) repeat-y;
+	margin-top: -3px;
+}
+
+#left-area h1 {
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	background-color: #ADAEAE;
+	text-transform: uppercase;
+	box-shadow:inset 0 0 4px #000000;
+	-webkit-box-shadow:inset 0 0 4px #000000;
+	-moz-box-shadow:inset 0 0 4px #000000;
+}
+
+#left-area ul {
+	padding: 20px;
+}
+
+#left-area li {
+	padding: 15px 45px;
+	display: block;
+}
+
+#left-area li:hover {
+	background-color: #575457;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+
+#left-area li a:hover {
+	color: white;
+}
+
+.users {
+	background: url(../images/users.png) no-repeat;
+}
+
+.clients {
+	background: url(../images/clients.png) no-repeat;
+}
+
+.referrals {
+	background: url(../images/referrals.png) no-repeat;
+}
+
+.visits {
+	background: url(../images/visits.png) no-repeat;
+}
+
+.search {
+	background: url(../images/search.png) no-repeat;
+}
+
+/*------------------------------------------------*/
+/*------------------[Right-area]------------------*/
+/*------------------------------------------------*/
+
+#right-area {
+	background: #E4EDF9;
+	height: 500px;
+	display: block;
+	padding: 10px;
+	float: left;
+	width: 874px;
+}
+
+#main-content {
+	background: white;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #B0B0B0;
+	border-radius: 5px;
+}
