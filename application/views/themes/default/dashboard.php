@@ -2,6 +2,7 @@
 	<img src="/CTS/assets/images/logo.png" class="logo">
 </div>
 <div id="left-area">
+<?php echo anchor('logout', 'Logout')?>
 <h1>Dashboard</h1>
 	<ul>
 		<li class="users"><?php echo anchor("users", "Users")?></li>
