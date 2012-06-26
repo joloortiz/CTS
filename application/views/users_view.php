@@ -1,9 +1,3 @@
-<html>
-<head>
-<script type="text/javascript" src="<?php echo site_url(ASSETS_DIR . SCRIPTS_DIR . 'jquery/jquery-1.7.2.min.js'); ?>"></script>
-<?php echo link_tag( MODAL_DIR . '/css/confirm.css' ); ?>
-</head>
-<body>
 	<h2>Users</h2>
 	<hr>
 	<h3><?php echo anchor("dashboard", "Back")?></h3>
@@ -97,5 +91,3 @@
 			});
 		}
 		</script>	
-</body>
-</html>

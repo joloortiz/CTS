@@ -5,7 +5,10 @@
 	<title><?php //$this->title?></title>
 	<?php echo link_tag( ASSETS_DIR . STYLESHEETS_DIR . 'reset.css' ); ?>
 	<?php echo link_tag( ASSETS_DIR . STYLESHEETS_DIR . 'default.css' ); ?>
-	<?php // TODO: load the queud scripts and css, use ?>
+	<script type="text/javascript" src="<?php echo site_url(ASSETS_DIR . SCRIPTS_DIR . 'jquery/jquery-1.7.2.min.js'); ?>"></script>
+	<?php echo link_tag( MODAL_DIR . '/css/confirm.css' ); ?>
+
+	<?php // TODO: load the queud scripts and css, use ?>ß
 </head>
 
 <?php if ($page != 'login_page'): ?>
