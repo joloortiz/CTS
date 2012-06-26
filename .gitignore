@@ -14,3 +14,5 @@ user_guide/
 index.php
 license.txt
 README
+
+application/views/themes/.DS_Store
