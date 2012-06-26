@@ -5,17 +5,6 @@ application/views/.DS_Store
 application/controllers/.DS_Store
 .settings/
 _database/
-application/cache/
-application/config/
-application/core/
-application/errors/
-application/helpers/
-application/hooks/
-application/language/
-application/libraries/
-application/logs/
-application/third_party/
-application/index.html
 system/
 user_guide/
 .buildpath
