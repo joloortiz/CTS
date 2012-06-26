@@ -12,6 +12,7 @@
 <body>
 <h2  id="title-area" style="padding: 20px; margin: auto 20px;">Clients View</h2>
 <hr>
+<div id="clients-list">
 <h3 id="add-client"><?php echo anchor("clients/add", "Add Client")?></h3>
 
 <h2>Active Clients</h2>
@@ -62,6 +63,7 @@
 
 
 </table>
+</div>
 </div>
 </div>
 </body>

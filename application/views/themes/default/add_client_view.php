@@ -3,11 +3,17 @@
 <script type="text/javascript"
 	src="<?php echo site_url(ASSETS_DIR . SCRIPTS_DIR . 'module-add-user-validate/form-validate.js'); ?>"></script>
 <?php echo link_tag( ASSETS_DIR . SCRIPTS_DIR . 'module-add-user-validate/form-validate.css' ); ?>
+<div id="right-area">
+<title>Add Client</title>
+<div id="main-content">
 </head>
+
 <body>
-	<h2>Add Client</h2>
+
+	<h2 id="title-area" style="padding: 20px; margin: auto 20px;">Add Client</h2>
+
 	<hr>
-	<div id='addclient'>
+	
 		
 		<?php  
 		$attributes = array('name' => 'form', 'onsubmit' => 'return validate(this)', 'id' => 'form', 'class' => 'form');
@@ -63,6 +69,7 @@ echo form_dropdown('gender', $options, 'male');
 		</p>
 
 		<?php echo form_close(); ?>
+	</div>
 	</div>
 </body>
 </html>

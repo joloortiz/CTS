@@ -227,7 +227,7 @@ div#adduser p {
 }
 
 
-#main-content h2 {
+#main-content h2, #main-content form {
 	margin-left: 40px;
 	padding-bottom: 10px;
 	
@@ -235,8 +235,15 @@ div#adduser p {
 
 #main-content table {
 	margin-left: 20px;
+	background:#f3f3f3; 
+	border:2px solid #cfcfcf; 
 	}
 	
+	#clients-list {
+	padding:0 10px 10px 10px; 
+	
+	margin-top: 10px;
+	}
 #main-content th, #main-content td  {
 	padding-left: 20px;
 	}
