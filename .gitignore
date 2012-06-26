@@ -24,3 +24,9 @@ index.php
 license.txt
 README
 
+
+application/config/database.php
+
+application/.DS_Store
+
+assets/.DS_Store
