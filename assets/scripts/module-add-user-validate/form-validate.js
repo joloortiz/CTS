@@ -4,8 +4,7 @@ function validate(form) {
   var password = form.password.value;
   var passconf = form.passconf.value;
   var email = form.email.value;
-  var firstname = form.firstname.value;
-  var mobilenumber = form.mobilenumber.value;
+  //var mobilenumber = form.mobilenumber.value;
   var nameRegex = /^[a-z](?=[\w.]{3,31}$)\w*\.?\w*$/i;
   var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   var numRegex = /^\+?[\d\s]{3,}$/;
@@ -38,7 +37,7 @@ function validate(form) {
     inlineMsg('email','<strong>Error</strong><br />You have entered an invalid email.',2);
     return false;
   }
-  // Zhack's editing starts here
+  /* Zhack's editing starts here
    if(!firstname.match(nameRegex)) {
     inlineMsg('firstname','You have entered an invalid Name.',2);
     return false;
@@ -47,6 +46,7 @@ function validate(form) {
 	    inlineMsg('mobilenumber','<strong>Error</strong><br />You have entered an invalid phone number.',2);
 	    return false;
   }
+  */
   return true;
 }
 
