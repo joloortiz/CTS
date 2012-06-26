@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="<?php echo site_url(ASSETS_DIR . SCRIPTS_DIR . 'jquery/jquery-1.7.2.min.js'); ?>"></script>
 	<?php echo link_tag( MODAL_DIR . '/css/confirm.css' ); ?>
 
-	<?php // TODO: load the queud scripts and css, use ?>ß
+	<?php // TODO: load the queud scripts and css, use ?>
 </head>
 
 <?php if ($page != 'login_page'): ?>
