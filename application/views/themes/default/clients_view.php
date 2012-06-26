@@ -2,18 +2,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<div id="right-area">
+	
 <title>Clients View</title>
+<div id="main-content">
 <?php echo link_tag( ASSETS_DIR . SCRIPTS_DIR . 'module-add-user-validate/form-validate.css' ); ?></head>
 
 </head>
 <body>
-<h2>Clients View</h2>
+<h2  id="title-area" style="padding: 20px; margin: auto 20px;">Clients View</h2>
 <hr>
 <h3><?php echo anchor("clients/add", "Add Client")?></h3>
+
 <h2>Active Clients</h2>
 <table>
 <?php if (isset($clients)) : foreach ($clients as $row) : ?>
-<tr>
+<tr style="padding: 20px; margin: auto 20px;">
 <td><?php echo $row->c_fname; ?></td>
 <td><?php echo $row->c_lname; ?></td>
 <td><?php echo $row->c_email; ?></td>
@@ -43,5 +47,7 @@
 
 
 </table>
+</div>
+</div>
 </body>
 </html>
