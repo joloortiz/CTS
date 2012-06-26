@@ -12,16 +12,23 @@
 <body>
 <h2  id="title-area" style="padding: 20px; margin: auto 20px;">Clients View</h2>
 <hr>
-<h3><?php echo anchor("clients/add", "Add Client")?></h3>
+<h3 id="add-client"><?php echo anchor("clients/add", "Add Client")?></h3>
 
 <h2>Active Clients</h2>
 <table>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email Address</th>
+<th>Edit</th>
+<th>Deactivate</th>
+</tr>
 <?php if (isset($clients)) : foreach ($clients as $row) : ?>
 <tr style="padding: 20px; margin: auto 20px;">
 <td><?php echo $row->c_fname; ?></td>
 <td><?php echo $row->c_lname; ?></td>
 <td><?php echo $row->c_email; ?></td>
-<td><?php echo anchor("clients/edit/$row->c_id", "Edit")?> | <?php echo anchor("clients/deactivate/$row->c_id", "Deactivate")?></td>
+<td><?php echo anchor("clients/edit/$row->c_id", "Edit")?></td><td><?php echo anchor("clients/deactivate/$row->c_id", "Deactivate")?></td>
 
 </tr>
 <?php endforeach; ?>
@@ -31,14 +38,22 @@
 
 
 </table>
+<hr>
 <h2>Inactive Clients</h2>
 <table>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email Address</th>
+<th>Edit</th>
+<th>Activate</th>
+</tr>
 <?php if (isset($clients2)) : foreach ($clients2 as $row) : ?>
 <tr>
 <td><?php echo $row->c_fname; ?></td>
 <td><?php echo $row->c_lname; ?></td>
 <td><?php echo $row->c_email; ?></td>
-<td><?php echo anchor("clients/edit/$row->c_id", "Edit")?> | <?php echo anchor("clients/activate/$row->c_id", "Activate")?></td>
+<td><?php echo anchor("clients/edit/$row->c_id", "Edit")?></td><td><?php echo anchor("clients/activate/$row->c_id", "Activate")?></td>
 </tr>
 <?php endforeach; ?>
 <?php else :?>

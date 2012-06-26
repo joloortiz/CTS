@@ -52,7 +52,7 @@ a {
 	background:#FFF;
 }
 tr:nth-of-type(odd){
-background:#5298d5;
+//background:#5298d5;
 
 }
 
@@ -225,6 +225,25 @@ div#adduser p {
 	border: 1px solid #B0B0B0;
 	border-radius: 5px;
 }
+
+
+#main-content h2 {
+	margin-left: 40px;
+	padding-bottom: 10px;
+	
+}
+
+#main-content table {
+	margin-left: 20px;
+	}
+	
+#main-content th, #main-content td  {
+	padding-left: 20px;
+	}
+
+#add-client{
+	margin: 10px 0 10px 40px;
+	}
 
 /*------------------------------------------------*/
 /*-------------------[Top-Menu]-------------------*/
