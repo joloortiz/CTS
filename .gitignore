@@ -1,4 +1,6 @@
 .DS_Store
+assets/.DS_Store
+application/.DS_Store
 application/views/.DS_Store
 application/controllers/.DS_Store
 .settings/
@@ -23,10 +25,3 @@ user_guide/
 index.php
 license.txt
 README
-
-
-application/config/database.php
-
-application/.DS_Store
-
-assets/.DS_Store
