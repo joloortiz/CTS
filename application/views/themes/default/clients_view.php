@@ -10,6 +10,7 @@
 <h2>Clients View</h2>
 <hr>
 <h3><?php echo anchor("clients/add", "Add Client")?></h3>
+<h2>Active Clients</h2>
 <table>
 <?php if (isset($clients)) : foreach ($clients as $row) : ?>
 <tr>
@@ -26,6 +27,21 @@
 
 
 </table>
+<h2>Inactive Clients</h2>
+<table>
+<?php if (isset($clients2)) : foreach ($clients2 as $row) : ?>
+<tr>
+<td><?php echo $row->c_fname; ?></td>
+<td><?php echo $row->c_lname; ?></td>
+<td><?php echo $row->c_email; ?></td>
+<td><?php echo anchor("clients/edit/$row->c_id", "Edit")?> | <?php echo anchor("clients/activate/$row->c_id", "Activate")?></td>
+</tr>
+<?php endforeach; ?>
+<?php else :?>
+<h2>No values found</h2>
+<?php endif;?>
 
+
+</table>
 </body>
 </html>

@@ -20,13 +20,16 @@ class Clients extends CI_Controller {
 
 	function index(){
 		$this->load->model('clients_model');
-		$query = $this->clients_model->get_clients();
-
-		if($query){
-			$data['clients'] = $query;
+		$query = $this->clients_model->get_active_clients();
+		$query2 = $this->clients_model->get_inactive_clients();
+		if(!$query){
+			$query = '';
+		}
+		if(!$query2){
+			$query2 = '';
 		}
 		//display all users
-		$data = array( 'main_content' => 'clients_view', 'SITE_TEMPLATE' => 'default/', 'title' => 'dashboard', 'page' => 'clients_view' );
+		$data = array( 'clients' => $query,'clients2'=> $query2 ,'main_content' => 'clients_view', 'SITE_TEMPLATE' => 'default/', 'title' => 'dashboard', 'page' => 'clients_view' );
 		$this->load->view( THEMES_DIR . MASTER_DIR . 'render', $data);
 	}
 
