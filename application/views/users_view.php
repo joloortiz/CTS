@@ -3,7 +3,7 @@
 	<h3><?php echo anchor("dashboard", "Back")?></h3>
 	<h3><?php echo anchor("users/add", "Add User")?></h3>
 	<h2>Active Users</h2>
-	<table class="active_user">
+	<table>
 	<tr>
 		<th>Username</th>
 		<th>Name</th>
@@ -23,10 +23,8 @@
 	<h2>No Records</h2>
 	<?php endif; ?>
 	</table>
-	
-	
 	<h2>Inactive Users</h2>
-	<table class="inactive_user">
+	<table>
 	<tr>
 		<th>Username</th>
 		<th>Name</th>
