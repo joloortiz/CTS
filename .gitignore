@@ -14,5 +14,6 @@ user_guide/
 index.php
 license.txt
 README
+*Thumbs.db
 
 application/views/themes/.DS_Store
