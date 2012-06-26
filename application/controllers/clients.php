@@ -26,7 +26,8 @@ class Clients extends CI_Controller {
 			$data['clients'] = $query;
 		}
 		//display all users
-		$this->load->view('dashboard_views/clients_view', $data);
+		$data = array( 'main_content' => 'clients_view', 'SITE_TEMPLATE' => 'default/', 'title' => 'dashboard', 'page' => 'clients_view' );
+		$this->load->view( THEMES_DIR . MASTER_DIR . 'render', $data);
 	}
 
 
@@ -36,7 +37,8 @@ class Clients extends CI_Controller {
 
 	//display add view 'clients/add'
 	function add(){
-		$this->load->view('dashboard_views/add_client_view');
+		$data = array( 'main_content' => 'add_client_view', 'SITE_TEMPLATE' => 'default/', 'title' => 'dashboard', 'page' => 'clients_view' );
+		$this->load->view( THEMES_DIR . MASTER_DIR . 'render', $data);
 	}
 
 
