@@ -11,6 +11,7 @@ $this->load->view( THEMES_DIR . MASTER_DIR . 'sidebar_view' );
 $this->load->view( THEMES_DIR . $SITE_TEMPLATE . $main_content);
 
 // finally the footer   
-$this->load->view( THEMES_DIR . MASTER_DIR . 'footer_view' );  
+$this->load->view( THEMES_DIR . MASTER_DIR . 'footer_view' );
+
 
 ?>
