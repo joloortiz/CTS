@@ -31,13 +31,9 @@ class Users extends CI_Controller {
 		if($query2){
 			$data['records2'] = $query2;
 		}
-		
 		//display all users
-
-		$vars = array( 'main_content' => 'users_view', 'SITE_TEMPLATE' => '/', 'title' => 'Users Panel', 'page' => 'view_users' );
-		$this->load->view( THEMES_DIR . MASTER_DIR . 'render', $vars);
-		
-		//$this->load->view('users_view', $data);
+	
+		$this->load->view('users_view', $data);
 	}
 	
 	//load add view 'users/add'
