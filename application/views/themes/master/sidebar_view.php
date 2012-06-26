@@ -1,3 +1,4 @@
+<?php if ($page != 'login_page'): ?>
 <div id="left-area">
 <?php echo anchor('logout', 'Logout')?>
 <h1>Dashboard</h1>
@@ -9,3 +10,4 @@
 		<li class="search"><?php echo anchor("search", "Search")?></li>
 	</ul>
 </div>
+<?php endif ?>
