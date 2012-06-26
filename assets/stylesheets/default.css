@@ -4,7 +4,7 @@ html {
 	margin: 0 auto;
 }
 
-body { margin: 0; }
+body { margin: 0; background: url(../images/bg.jpg); }
 
 footer {
 	margin: 5em auto 0;
@@ -21,15 +21,8 @@ a {
 	font-weight: bold;
 }
 
-p {
-	
-}
 #container {
-	margin: 0em auto;
-	-webkit-box-shadow: 0px 0px 11px #000000;
-	-moz-box-shadow: 0px 0px 11px #000000;
-	box-shadow: 0px 0px 11px #000000;
-	width: 1100px;
+	width: 100%;
 }
 /* Notification */
 .notify {
@@ -51,6 +44,8 @@ p {
 
 .aligncenter { 
 	text-align: center; 
+	
+.active_user, .inactive_user{border:1px solid #d3d3d3;}
 }
 
 /* Login form */
@@ -94,6 +89,7 @@ input#remember_me {
 	padding: 1em;
 	display: inline;
 	width: 10em;
+	background: -moz-linear-gradient(center top , #EEEEEE, #DDDDDD) repeat scroll 0 0 transparent;
 }
 
  label#remember_label {
@@ -122,12 +118,12 @@ div#adduser p {
 /*------------------------------------------------*/
 
 #header {
-	background: url(../images/header-bg.jpg) repeat-x;
 	height: 80px;
 }
 
 .logo { margin: 10px; }
 
+.menu-item li{float:left;}
 /*------------------------------------------------*/
 /*------------------[Left-area]-------------------*/
 /*------------------------------------------------*/
@@ -136,8 +132,6 @@ div#adduser p {
 	width: 206px;
 	height: 500px;
 	float: left;
-	background: #DDDFDC url(../images/left-bg.jpg) repeat-y;
-	margin-top: -3px;
 }
 
 #left-area h1 {
@@ -156,38 +150,51 @@ div#adduser p {
 }
 
 #left-area li {
-	padding: 15px 45px;
+	padding: 15px 15px;
 	display: block;
 }
 
 #left-area li:hover {
-	background-color: #575457;
-	text-transform: uppercase;
-	border-radius: 10px;
+	background: #4CAEE7 url(../images/menu-bg.png);
+	border: 1px solid #EFEFEF;
+	margin: -1px;
+}
+
+#left-area li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px black;
+	padding: 10px 40px;
 }
 
 #left-area li a:hover {
-	color: white;
+	color: black;
+	text-shadow: 1px 1px 2px white;
 }
 
-.users {
-	background: url(../images/users.png) no-repeat;
+/*.dashboard a {
+	background: url(../images/icondboard.png) no-repeat scroll 0 center transparent;
+}*/
+
+.users a {
+	background: url(../images/iconuser.png) no-repeat scroll 0 center transparent;
 }
 
-.clients {
-	background: url(../images/clients.png) no-repeat;
+.clients a {
+	background: url(../images/iconclient.png) no-repeat scroll 0 center transparent;
 }
 
-.referrers {
-	background: url(../images/referrals.png) no-repeat;
+.referrers a {
+	background: url(../images/iconreferrers.png) no-repeat scroll 0 center transparent;
 }
 
-.visits {
-	background: url(../images/visits.png) no-repeat;
+.visits a {
+	background: url(../images/iconvisit.png) no-repeat scroll 0 center transparent;
 }
 
-.search {
-	background: url(../images/search.png) no-repeat;
+.search a {
+	background: url(../images/iconsearch.png) no-repeat scroll 0 center transparent;
 }
 
 /*------------------------------------------------*/
@@ -200,7 +207,7 @@ div#adduser p {
 	display: block;
 	padding: 10px;
 	float: left;
-	width: 874px;
+	width: 1054px;
 }
 
 #main-content {
@@ -210,3 +217,15 @@ div#adduser p {
 	border: 1px solid #B0B0B0;
 	border-radius: 5px;
 }
+
+/*------------------------------------------------*/
+/*-------------------[Top-Menu]-------------------*/
+/*------------------------------------------------*/
+
+#header_menu {
+	float: right;
+	height: 20px;
+	width: 200px;
+}
+
+#header_menu li { float: left; }
