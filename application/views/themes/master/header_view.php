@@ -17,7 +17,7 @@
 			<menu id="header_menu">
 				<li class="menu-item"><a href="">settings</a></li>
 				<li class="menu-item"><a href="">profile</a></li>
-				<li class="menu-item logout"><a href="">logout</a></li>
+				<li class="menu-item logout"><?php echo anchor('logout','Logout') ?></li>
 			</menu>
 			<div id="dashboard_date"><?php echo date('F D j, Y'); ?></div>
 		</div>

@@ -32,13 +32,16 @@ class Users extends CI_Controller {
 			$data['records2'] = $query2;
 		}
 		//display all users
-	
-		$this->load->view('users_view', $data);
+		$data = array( 'records'=> $query,'records2' =>$query2, 'main_content' => 'users_view', 'SITE_TEMPLATE' => 'default/', 'title' => 'dashboard', 'page' => 'dashboard' );
+		$this->load->view( THEMES_DIR . MASTER_DIR . 'render', $data);
+		// old script: $this->load->view('users_view', $data);
 	}
 	
 	//load add view 'users/add'
 	function add(){		
-		$this->load->view('add_user_view');
+		$data = array( 'main_content' => 'add_user_view', 'SITE_TEMPLATE' => 'default/', 'title' => 'dashboard', 'page' => 'dashboard' );
+		$this->load->view( THEMES_DIR . MASTER_DIR . 'render', $data);
+		// old script: $this->load->view('add_user_view');
 	}
 	
 	function form_validate(){		

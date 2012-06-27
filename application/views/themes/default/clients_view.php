@@ -13,8 +13,8 @@
 <h2  id="title-area" style="padding: 20px; margin: auto 20px;">Clients View</h2>
 <hr>
 <div id="clients-list">
-<h3 id="add-client"><?php echo anchor("clients/add", "Add Client")?></h3>
-
+<h3 id="add-client"><?php echo anchor("clients/add", "Add New Client")?></h3>
+<hr>
 <h2>Active Clients</h2>
 <table>
 <tr>
@@ -25,12 +25,12 @@
 <th>Deactivate</th>
 </tr>
 <?php if (isset($clients)) : foreach ($clients as $row) : ?>
-<tr style="padding: 20px; margin: auto 20px;">
+<tr>
 <td><?php echo $row->c_fname; ?></td>
 <td><?php echo $row->c_lname; ?></td>
 <td><?php echo $row->c_email; ?></td>
-<td><?php echo anchor("clients/edit/$row->c_id", "Edit")?></td><td><?php echo anchor("clients/deactivate/$row->c_id", "Deactivate")?></td>
-
+<td><?php echo anchor("clients/edit/$row->c_id", "Edit")?></td>
+<td><?php echo anchor("clients/deactivate/$row->c_id", "Deactivate")?></td>
 </tr>
 <?php endforeach; ?>
 <?php else :?>

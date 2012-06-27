@@ -23,10 +23,10 @@ class Clients extends CI_Controller {
 		$query = $this->clients_model->get_active_clients();
 		$query2 = $this->clients_model->get_inactive_clients();
 		if(!$query){
-			$query = '';
+			
 		}
 		if(!$query2){
-			$query2 = '';
+			
 		}
 		//display all users
 		$data = array( 'clients' => $query,'clients2'=> $query2 ,'main_content' => 'clients_view', 'SITE_TEMPLATE' => 'default/', 'title' => 'dashboard', 'page' => 'clients_view' );
